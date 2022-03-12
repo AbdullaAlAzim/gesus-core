@@ -1,0 +1,34 @@
+div#elementor-panel-state-loading {
+    display: none !important;
+}
+div#elementor-notice-bar {
+    display: none;
+}
+div#elementor-panel-categories {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+}
+.elementor-panel-category {
+    width: 100%;
+}
+/*Add branding icon for each addons*/
+div#elementor-panel-category-gesuselement-addons .elementor-element,
+div#elementor-panel-category-gesus-header .elementor-element {
+  position: relative;
+}
+div#elementor-panel-category-gesuselement-addons .elementor-element::after,
+div#elementor-panel-category-gesus-header .elementor-element::after {
+    content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAYpJREFUeNpiYBiSgBGZs+XQVYGdXAIOpzm4DYDcAyd0BA6AxH+U9DoAKYc/bBwXPgtIHpAsC/qAovlp36aEi2L8/UuY+QUu8IowMHMwMxj+/fRg5ta1DH8/vFX49fsXw1MhSYbPukYfPqvJFLo76SxghJoc8Oo/4/p+ATmGlQpGDO/ZuBhUfn5m2HtuHcOPpw8ZKox8GO7yiTL8Z2Rk0Pj6hkFYS5bhroxYIAtI8/9fP/vvf/7KMMsojOErCxvYJfEvbzNwPn/I4OycxnBZUArutfNCMgyqHz4z8Egy9zOBBP59/aSwRUYbpnEDEAdavnv84TSXEEwjyI+BILnfjEwML1m4GH59/q0A1szw7x9yuF1kCBfboPL904WrQtIwsQsgMbAcFPz/95+BBVc0PJFSZLj/4z/eqMKm+QGIeCwpwvDw7X+scjDAhCZ5Aepnhot8Ag8e8omga9oAVYNic6Pgz++gQFkA9Bs4Aex787/wFRcfzI8LwCRIbuUrRyaG/wlAnsDApW2AAAMACI6MqbEJIR0AAAAASUVORK5CYII=');
+    font-size: 13px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    color: #fff;
+    padding: 2px 5px 3px 5px;
+    border-radius: 3px;
+    font-family: monospace;
+    text-align: center;
+    line-height: 1;
+    vertical-align: middle;
+}

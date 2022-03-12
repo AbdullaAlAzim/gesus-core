@@ -1,0 +1,56 @@
+/*Global*/
+.header-section.gesus-nav-builder {
+  display: flex;
+}
+
+.gesus-text-gradient .elementor-heading-title {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gesus-icon-gradient .elementor-icon i {
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gesus-icon-gradient .elementor-icon i:before {
+  position: initial;
+}
+
+.gesus-sticky-header.sticky-on {
+  top: 0;
+  width: 100% !important;
+  z-index: 20;
+  position: fixed !important;
+  animation-duration: 0.7s;
+  animation-fill-mode: both;
+  animation-name: fadeInDown;
+  animation-timing-function: ease;
+  transition: 0.3s all ease-in-out;
+  box-shadow: 0 3px 18px rgba(2, 21, 78, 0.09);
+}
+
+.gesus-before .elementor-button {
+  position: relative;
+  z-index: 2;
+}
+.gesus-before .elementor-button:before {
+  position: absolute;
+  content: "";
+  background-color: #000;
+  border: none;
+  height: 0;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: all 0.5s ease-in-out;
+  z-index: -1;
+  visibility: hidden;
+}
+.gesus-before .elementor-button:hover:before {
+  height: 100%;
+  visibility: visible;
+  color: #fff;
+}
